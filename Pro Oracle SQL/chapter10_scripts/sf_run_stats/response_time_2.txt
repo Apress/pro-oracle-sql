@@ -1,0 +1,174 @@
+23:10:00 MORIARTY - jkstill@jks1 SQL> @thm
+
+RUN_1_START
+-------------------------------------
+RUN_1 Start Time: 07/31/2010 23:10:07
+
+1 row selected.
+
+
+Table(s) Locked.
+
+Running 20 children
+
+Waiting for children to start
+
+
+PL/SQL procedure successfully completed.
+
+MATERIALIZE
+100.045 secs
+avg response time:    0.250113
+
+PL/SQL procedure successfully completed.
+
+
+RUN_2_START
+-------------------------------------
+RUN_2 Start Time: 07/31/2010 23:11:53
+
+1 row selected.
+
+
+Table(s) Locked.
+
+Running 20 children
+
+Waiting for children to start
+
+INLINE
+54.713 secs
+avg response time:    0.136783
+
+PL/SQL procedure successfully completed.
+
+
+Table truncated.
+
+
+237 rows created.
+
+
+Commit complete.
+
+23:12:50 MORIARTY - jkstill@jks1 SQL> @sr
+
+=========================================================================
+23:20:36 MORIARTY - jkstill@jks1 SQL> @sr
+
+NAME                                         MATERIALIZE          INLINE             DIFF
+---------------------------------------- --------------- --------------- ----------------
+STAT...process last non-idle time                      0             106              106
+LATCH.PL/SQL warning settings                          4             113              109
+LATCH.session switching                                2             117              115
+STAT...deferred (CURRENT) block cleanout              11             158              147
+ applications
+
+LATCH.SQL memory manager latch                         5             160              155
+LATCH.SGA IO buffer pool latch                       183               0             -183
+STAT...index fetch by key                             11             206              195
+STAT...parse time cpu                                216              11             -205
+EVENT..direct path write temp                        253               0             -253
+STAT...SQL*Net roundtrips to/from client               0             267              267
+EVENT..smon timer                                      0             300              300
+LATCH.mostly latch-free SCN                          347              29             -318
+LATCH.lgwr LWN SCN                                   347              29             -318
+STAT...messages received                             349              29             -320
+STAT...messages sent                                 349              29             -320
+STAT...redo writes                                   347              12             -335
+LATCH.Consistent RBA                                 347              12             -335
+LATCH.Change Notification Hash table lat             432              19             -413
+ch
+
+STAT...user calls                                      7             435              428
+LATCH.client/application info                          6             448              442
+EVENT..db file scattered read                        506               0             -506
+LATCH.object queue header heap                       868              75             -793
+LATCH.loader state object freelist                   800               0             -800
+STAT...shared hash latch upgrades - no w               1             815              814
+ait
+
+LATCH.redo writing                                 1,133             113           -1,020
+STAT...index scans kdiixs1                           105           1,305            1,200
+STAT...concurrency wait time                       1,314              20           -1,294
+LATCH.cache table scan latch                       1,708               0           -1,708
+STAT...physical read total multi block r           1,868               0           -1,868
+equests
+
+STAT...parse time elapsed                          1,939              20           -1,919
+STAT...physical read total IO requests             2,054             106           -1,948
+STAT...physical read IO requests                   1,971               0           -1,971
+STAT...total cf enq hold time                      2,372               0           -2,372
+STAT...consistent changes                          2,400               0           -2,400
+LATCH.object stats modification                    2,431               0           -2,431
+LATCH.simulator lru latch                          3,044              12           -3,032
+LATCH.sort extent pool                             3,201               2           -3,199
+STAT...redo write time                             3,601              24           -3,577
+STAT...physical write total multi block            3,600               0           -3,600
+requests
+
+LATCH.multiblock read objects                      3,906               0           -3,906
+STAT...physical write IO requests                  4,000              17           -3,983
+STAT...physical write total IO requests            4,412              67           -4,345
+STAT...CPU used when call started                      0           6,141            6,141
+LATCH.enqueues                                    12,898           1,034          -11,864
+STAT...IMU undo allocation size                   65,072           3,296          -61,776
+STAT...bytes received via SQL*Net from c               0          67,397           67,397
+lient
+
+STAT...bytes sent via SQL*Net to client                0          75,172           75,172
+STAT...redo wastage                               82,392           1,908          -80,484
+STAT...user I/O wait time                         85,565           1,724          -83,841
+STAT...physical reads cache prefetch             116,029               0         -116,029
+STAT...physical writes                           118,000              20         -117,980
+STAT...physical writes non checkpoint            118,000               4         -117,996
+STAT...physical writes direct temporary          118,000               0         -118,000
+tablespace
+
+STAT...db block gets direct                      118,000               0         -118,000
+STAT...physical reads                            118,000               0         -118,000
+STAT...physical reads cache                      118,000               0         -118,000
+STAT...physical writes direct                    118,000               0         -118,000
+STAT...db block gets                             122,487             763         -121,724
+STAT...free buffer requested                     162,769               2         -162,767
+LATCH.cache buffers lru chain                    207,940              21         -207,919
+STAT...DB time                                        11         222,803          222,792
+LATCH.object queue header operation              332,844             146         -332,698
+STAT...session pga memory max                 77,599,848       7,591,216      -70,008,632
+STAT...file io wait time                     511,678,835         515,000     -511,163,835
+STAT...physical read total bytes             968,032,256       1,736,704     -966,295,552
+STAT...physical write bytes                  966,656,000         163,840     -966,492,160
+STAT...physical read bytes                   966,656,000               0     -966,656,000
+STAT...physical write total bytes            968,113,664         982,528     -967,131,136
+STAT...cell physical IO interconnect byt   1,936,145,920       2,719,232   -1,933,426,688
+es
+
+STAT...session uga memory                  4,273,823,312      -4,955,096   -4,278,778,408
+
+70 rows selected.
+
+23:20:37 MORIARTY - jkstill@jks1 SQL> @mse
+
+                                   RUN 1     RUN 2
+                                    TIME      TIME
+                                  WAITED    WAITED      TIME
+EVENT                            SECONDS   SECONDS      DIFF
+------------------------------ --------- --------- ---------
+Disk file operations I/O           91.97     17.20     74.77
+SQL*Net message from client         8.19      8.85      -.65
+SQL*Net message to client            .00       .00       .00
+buffer busy waits                    .75       .00       .75
+cursor: pin S wait on X            11.38       .00     11.38
+db file scattered read            506.43       .00    506.43
+db file sequential read             4.52       .00      4.52
+direct path write temp            252.86       .00    252.86
+enq: TM - contention              118.63     43.47     75.17
+events in waitclass Other           7.61       .01      7.60
+latch: cache buffers chains          .01       .01      -.00
+resmgr:cpu quantum                950.01    964.78    -14.77
+                               --------- --------- ---------
+sum                              1952.37   1034.32    918.05
+
+12 rows selected.
+
+23:20:41 MORIARTY - jkstill@jks1 SQL> spool off

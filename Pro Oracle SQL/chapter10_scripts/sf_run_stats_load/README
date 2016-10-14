@@ -1,0 +1,39 @@
+
+run_stats_load
+
+Used to put a load on the database
+run under a different user account than the run_stats
+being used for testing
+
+---
+
+similar to run_stats, but runs multiple processes to run the same code.
+collects and compares the results from 2 runs.
+
+edit defaults.sql 
+change username to name of account you will be testing with.
+
+edit th.conf - sets the database, username and password
+
+edit thc1.sql and thc2.sql - the code to execute
+
+login as sys
+
+@../run_stats/grants.sql
+@mview.sql
+
+login as user
+
+@create.sql
+@../run_stats/get_epoch_microseconds.sql
+
+@test_harness_m.sql - run the code to compare
+
+it also runs:
+  run_stats.sql - will compare the stats
+  insert_results.sql - data for comparison
+
+sr.sql - compare results
+
+
+

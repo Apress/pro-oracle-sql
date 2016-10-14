@@ -1,0 +1,32 @@
+
+
+                                                                                                                   SECONDS
+                                                                                                              WAIT      IN
+USERNAME   EVENT                             SID P1TEXT               P1 P2TEXT                 P2     SEQ    TIME    WAIT STATE
+---------- ------------------------------ ------ ---------- ------------ ------------ ------------ ------- ------- ------- --------------------
+JKSTILL    enq: TM - contention              124 name|mode    1414332420 object #           112184      25      91      13 WAITED KNOWN TIME
+                                             125 name|mode    1414332422 object #           112184     144       0      13 WAITING
+                                             136 name|mode    1414332420 object #           112184      25     143      14 WAITED KNOWN TIME
+           latch: cache buffers chains       117 address      1360636680 number                122      30      14      12 WAITED KNOWN TIME
+                                             118 address      1360609700 number                122      27       8      12 WAITED KNOWN TIME
+                                             121 address      1360356620 number                122      27       2       9 WAITED KNOWN TIME
+                                             123 address      1360609700 number                122      27       6      12 WAITED KNOWN TIME
+                                             127 address      1360729780 number                122      30       5       3 WAITED KNOWN TIME
+                                             128 address      1361403520 number                122      30      16       6 WAITED KNOWN TIME
+                                             130 address      1361403520 number                122      27      15       6 WAITED KNOWN TIME
+                                             131 address      1360729780 number                122      29       5       3 WAITED KNOWN TIME
+                                             134 address      1360462260 number                122      32       8      12 WAITED KNOWN TIME
+                                             138 address      1360729780 number                122      32      76       3 WAITED KNOWN TIME
+                                             140 address      1361403520 number                122      30      14       6 WAITED KNOWN TIME
+                                             141 address      1361403520 number                122      28      15       6 WAITED KNOWN TIME
+                                             144 address      1360729780 number                122      29       7       3 WAITED KNOWN TIME
+                                             145 address      1360609700 number                122      27       9      12 WAITED KNOWN TIME
+                                             114 address      1361477620 number                122      27       8      13 WAITED KNOWN TIME
+                                             148 address      1361270140 number                122      30      15       3 WAITED KNOWN TIME
+                                             105 address      1361403520 number                122      35      16       6 WAITED KNOWN TIME
+                                             106 address      1360729780 number                122      31      74       3 WAITED KNOWN TIME
+
+
+21 rows selected.
+
+

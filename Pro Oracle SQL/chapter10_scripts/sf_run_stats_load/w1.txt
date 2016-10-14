@@ -1,0 +1,36 @@
+                                                                                                                   SECONDS
+                                                                                                              WAIT      IN
+USERNAME   EVENT                             SID P1TEXT               P1 P2TEXT                 P2     SEQ    TIME    WAIT STATE
+---------- ------------------------------ ------ ---------- ------------ ------------ ------------ ------- ------- ------- --------------------
+JKSTILL    control file sequential read      106 file#                 0 block#                 18     196      -1       2 WAITED SHORT TIME
+                                             144 file#                 0 block#                 18     195      -1       1 WAITED SHORT TIME
+                                             141 file#                 0 block#                 18     261      -1       0 WAITED SHORT TIME
+                                             138 file#                 0 block#                 18     228      -1       1 WAITED SHORT TIME
+                                             136 file#                 0 block#                 18     164      -1       1 WAITED SHORT TIME
+                                             134 file#                 0 block#                 18     196      -1       1 WAITED SHORT TIME
+                                             130 file#                 0 block#                 18     162      -1       3 WAITED SHORT TIME
+                                             148 file#                 0 block#                 18     195      -1       0 WAITED SHORT TIME
+                                             114 file#                 0 block#                 18     229      -1       0 WAITED SHORT TIME
+                                             118 file#                 0 block#                 18     129      -1       2 WAITED SHORT TIME
+                                             121 file#                 0 block#                 18     262      -1       1 WAITED SHORT TIME
+                                             124 file#                 0 block#                 18     229      -1       2 WAITED SHORT TIME
+                                             127 file#                 0 block#                 18     229      -1       0 WAITED SHORT TIME
+                                             128 file#                 0 block#                 18     231      -1       0 WAITED SHORT TIME
+           db file scattered read            123 file#               201 block#              16041     156      -1       0 WAITED SHORT TIME
+                                             145 file#               201 block#               9609     213       0       0 WAITING
+                                             140 file#               201 block#              16137     219       0       0 WAITING
+           direct path write temp            131 file numbe          201 first dba            9994     222      -1       0 WAITED SHORT TIME
+                                                 r
+
+                                             117 file numbe          201 first dba           16778     190      -1       0 WAITED SHORT TIME
+                                                 r
+
+                                             105 file numbe          201 first dba           10528     197      -1       0 WAITED SHORT TIME
+                                                 r
+
+           enq: TM - contention              125 name|mode    1414332422 object #           112184     135       0      14 WAITING
+
+
+21 rows selected.
+
+21:21:07 lestrade.jks.com - jkstill@ts30 SQL> spool off

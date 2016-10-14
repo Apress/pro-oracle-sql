@@ -1,0 +1,62 @@
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hudson)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ts72)(CID=(PROGRAM=)(HOST=poirot)(USER=jkstill))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 9.2.0.5.0 - Production
+	Unix Domain Socket IPC NT Protocol Adaptor for Linux: Version 9.2.0.5.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 9.2.0.5.0 - Production
+  Time: 02-JAN-2006 11:07:16
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: No listener
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12500, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hudson)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ts72)(CID=(PROGRAM=)(HOST=poirot)(USER=jkstill))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 9.2.0.5.0 - Production
+	Unix Domain Socket IPC NT Protocol Adaptor for Linux: Version 9.2.0.5.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 9.2.0.5.0 - Production
+  Time: 02-JAN-2006 11:07:24
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 0
+    ns main err code: 12564
+    TNS-12564: TNS:connection refused
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: No listener
+    nt secondary err code: 2
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(Key=ts20))(CONNECT_DATA=(SERVICE_NAME=ts20)(CID=(PROGRAM=sqlplus@poirot)(HOST=poirot)(USER=jkstill))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 10.2.0.3.0 - Production
+	Unix Domain Socket IPC NT Protocol Adaptor for Linux: Version 10.2.0.3.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 10.2.0.3.0 - Production
+  Time: 30-JUL-2010 23:11:19
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: TNS:no listener
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: No listener
+    nt secondary err code: 111
+    nt OS err code: 0
